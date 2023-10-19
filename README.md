@@ -15,16 +15,20 @@ Welcome to <b>Live Project shop-Management Project</b>
 	<li>Encapsulation<img src="https://techelliptica.com/images/correct.png" style="width:15px;height:20px;"></li>
 </ul>
 
+<img src="images/base.png" style="width:70%;height:70%;" />
+
 
 <h3><u>Who all are eligible ? </u></h3>
 
 <p>All Students who has enabled project from <a href="https://techelliptica.com">TechElliptica Dashboard</a>. Students having sufficient credits can enable this project to learn all concepts</p>
 
 <h3><u>Clone Project</u></h3>
-```
+
+``` Clone
 	git clone https://github.com/techellipticaeducation/live-project-shop-management.git
 ```
 
+<b style="text-transform:uppercase;color:red;"> All next Steps is available in RealTime Project Section in  Tech Elliptica Batch</b> <BR/><BR/><BR/>
 
 
 <img src="https://techelliptica.com/images/logo.png">
