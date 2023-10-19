@@ -1,4 +1,4 @@
-package com.mycompany.mavenproject1;
+package techelliptica.realproject.app;
 
 public class Item {
 	
