@@ -247,9 +247,23 @@ public class App extends javax.swing.JFrame {
     	
     }
 
-    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jButton2ActionPerformed
+    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {
+    	String amountGiven = jTextField3.getText();
+    	double amountGivenByCustomer = Double.parseDouble(amountGiven);
+    	double amountReturn = CustomCalculation.getAmountReturnToCustomer(amountGivenByCustomer);
+    	jLabel10.setText(String.valueOf(amountReturn));
+    
+    	int[][] returnCoinArray = CustomCalculation.getCoinReturnToCustomer(amountReturn);
+    
+    	String coinString= "";
+    	for(int i = 0 ; i < returnCoinArray.length ; i++) {
+    		if(returnCoinArray[i][1] > 0) {
+    			coinString  = coinString + ""+returnCoinArray[i][0] +" -> " + returnCoinArray[i][1]+"<BR/>";
+    		}
+    	}
+    	
+    	jLabel7.setText("<html>"+coinString+"</html>");
+    }
 
     
     public void setTable() {
@@ -260,8 +274,8 @@ public class App extends javax.swing.JFrame {
     	int i = 0;
     	for(Item item : allItems) {
     		ar[i][0] = item.getItemName();
-    		ar[i][1] = item.getItemPrice();
-    		ar[i][2] = item.getItemQuantity();
+    		ar[i][2] = item.getItemPrice();
+    		ar[i][1] = item.getItemQuantity();
     		ar[i][3] = item.getTotalPrice();
     		i++;
     	}
